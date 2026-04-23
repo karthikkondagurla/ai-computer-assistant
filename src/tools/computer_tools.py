@@ -168,6 +168,28 @@ def search_web_query(query: str) -> str:
 
 
 @tool
+def play_youtube_video(query: str) -> str:
+    """Search for a video on YouTube and play the first result automatically."""
+    try:
+        import pyautogui
+        import time
+        
+        encoded_query = query.replace(" ", "+")
+        url = f"https://www.youtube.com/results?search_query={encoded_query}"
+        webbrowser.open(url)
+        
+        time.sleep(3)
+        
+        pyautogui.press("tab", presses=3)
+        time.sleep(0.5)
+        pyautogui.press("enter")
+        
+        return f"✅ Playing '{query}' on YouTube"
+    except Exception as e:
+        return f"❌ Error playing video: {str(e)}"
+
+
+@tool
 def type_text(text: str) -> str:
     """Simulate keyboard input at the current cursor position. Wait 1 second for focus."""
     try:

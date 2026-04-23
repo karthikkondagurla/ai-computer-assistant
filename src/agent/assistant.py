@@ -10,7 +10,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from src.tools.computer_tools import (
     create_folder, list_files, delete_file_or_folder, rename_file,
     create_text_file, read_text_file, open_application, open_website,
-    search_web_query, type_text, press_key, take_screenshot,
+    search_web_query, play_youtube_video, type_text, press_key, take_screenshot,
     copy_to_clipboard, get_system_info, run_terminal_command, get_current_datetime
 )
 
@@ -18,7 +18,7 @@ from src.tools.computer_tools import (
 TOOLS = [
     create_folder, list_files, delete_file_or_folder, rename_file,
     create_text_file, read_text_file, open_application, open_website,
-    search_web_query, type_text, press_key, take_screenshot,
+    search_web_query, play_youtube_video, type_text, press_key, take_screenshot,
     copy_to_clipboard, get_system_info, run_terminal_command, get_current_datetime
 ]
 
@@ -34,6 +34,7 @@ You have access to the following tools:
 - open_application: Launch applications (chrome, firefox, vscode, notepad, etc.)
 - open_website: Open URLs in the default browser
 - search_web_query: Search Google for any query
+- play_youtube_video: Search and play a YouTube video automatically
 - type_text: Simulate keyboard typing at cursor position
 - press_key: Press keyboard keys or combinations (ctrl+c, alt+f4, etc.)
 - take_screenshot: Capture the screen as a PNG image

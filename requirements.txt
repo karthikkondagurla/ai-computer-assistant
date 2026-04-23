@@ -1,0 +1,9 @@
+langchain>=0.3.0
+langchain-groq>=0.2.0
+pyautogui>=0.9.54
+psutil>=5.9.0
+pillow>=10.0.0
+pyperclip>=1.8.2
+keyring>=24.0
+pyinstaller>=6.0
+python-dotenv>=1.0.0
